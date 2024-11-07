@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-family: "Teko", sans-serif;
+
+    
+}
+:root{
+    --primary-color: rgb(247, 239, 229);
+    --secondary-color: rgb(226, 191, 217);
+    --third-color:rgb(200, 161, 224);
+    --fourth-color: rgb(103, 65, 136);
+}
+nav{
+    height: 4rem; 
+    background-color: var(--fourth-color);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding:  0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+   
+}
+nav ul {
+    display: flex;
+    list-style: none; 
+    justify-content: flex-end;
+   
+    
+    
+}
+
+nav ul li :hover{ 
+    background-color: var(--primary-color);
+    color: var(--fourth-color);
+    padding: 15px;
+    
+} 
+nav img{
+    height: 25px;
+    width: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    
+}
+.sidemenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--primary-color);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidemenu li{
+    width: 100%;
+
+}
+.sidemenu a{
+    width: 100%;
+    color: var(--fourth-color);
+    
+}
+.menubutton{
+    display: none;
+}
+@media(max-width:800px){
+    .hideonmobile{
+        display: none;
+    }
+    .menubutton{
+        display: block;
+    }
+}
+@media(max-width:400px){
+    .sidemenu{
+        width: 100%;
+    }
+}
+  
+#showcase{
+    background: #333 url('../img/wellness-centrum-bruntal-02-rotated.jpg') no-repeat center center/cover;
+    height: 50vh; 
+    color: #ffffff;
+    
+} 
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgb(0,0, 0, 43%);
+}
