@@ -92,6 +92,9 @@ nav img{
         width: 100%;
     }
 }
+.menubutton :hover{
+    display: none;
+}
   
 #showcase{
     background: #333 url('../img/wellness-centrum-bruntal-02-rotated.jpg') no-repeat center center/cover;
