@@ -15,7 +15,8 @@
     --fourth-color: rgb(103, 65, 136);
 }
 .padding{
-    padding: 100px;
+padding-top: 1px;
+    padding-bottom: 70px;
 }
 .center {
     text-align: center;
@@ -37,7 +38,8 @@ h1{
     margin-top: 125px;
     margin-bottom: 0.5rem;
     font-weight: 700;
-    line-height: 1.2; 
+    line-height: 1.2;
+    font-size: 100px; 
 }
 h2{
     margin-top: 0;
