@@ -15,7 +15,7 @@
     --fourth-color: rgb(103, 65, 136);
 }
 .padding{
-padding-top: 1px;
+    padding-top: 1px;
     padding-bottom: 70px;
 }
 .center {
@@ -33,6 +33,9 @@ padding-top: 1px;
 }
 .pozadi{
     background-color: var(--primary-color);
+}
+.padding2{
+    padding-bottom: 10%;
 }
 h1{
     margin-top: 125px;
@@ -55,6 +58,7 @@ h3{
     font-size: 2rem;
      
 }
+
 nav{
     width: 100%;
     display: flex;
@@ -203,6 +207,28 @@ nav ul li :hover{
     align-items: center;
     color: var(--fourth-color);
 }
+
+@media(max-width:400px){
+    .sidemenu{
+        width: 100%;
+    }
+}
+.kontakt{
+    display: flex;
+    justify-content: space-evenly;
+}
+.kontakt-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info{
+    padding-bottom: 5rem;
+}
+.info a{
+    text-decoration: underline;
+}
 @media(max-width:800px){
     .hideonmobile{
         display: none;
@@ -225,21 +251,20 @@ nav ul li :hover{
 
     
     }
-}
-@media(max-width:400px){
-    .sidemenu{
+    .kontakt {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 }
-form{
-    display: grid;
-    grid-row-gap: 30px;
-}
-.form{
-   display: flex;
-   justify-content: center;
-}
-input,select{
-    pad: 10px 15px;
-}
-
+footer {
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+ }
