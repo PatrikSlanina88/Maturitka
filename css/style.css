@@ -231,3 +231,15 @@ nav ul li :hover{
         width: 100%;
     }
 }
+form{
+    display: grid;
+    grid-row-gap: 30px;
+}
+.form{
+   display: flex;
+   justify-content: center;
+}
+input,select{
+    pad: 10px 15px;
+}
+
