@@ -58,6 +58,13 @@ h3{
     font-size: 2rem;
      
 }
+h4{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 1.3rem;
+}
 
 nav{
     width: 100%;
@@ -229,6 +236,54 @@ nav ul li :hover{
 .info a{
     text-decoration: underline;
 }
+
+footer {
+    padding-bottom: 2%;
+    width: 100%;
+    background-color: var(--fourth-color);
+    color: var(--secondary-color);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+footer img{
+    padding-top: 2%;
+    
+}
+.masaze{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    
+}
+.mas{
+    display: grid;
+    align-items: center;
+    color: var(--fourth-color);
+    max-width: 35%;
+}
+.sauna{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.virivka{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    
+}
 @media(max-width:800px){
     .hideonmobile{
         display: none;
@@ -256,15 +311,23 @@ nav ul li :hover{
         flex-direction: column;
         width: 100%;
     }
-}
-footer {
-    padding-bottom: 2%;
-    width: 100%;
-    background-color: var(--fourth-color);
-    color: var(--secondary-color);
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    .masaze {
+        flex-direction: column;
+
     
- }
+    }
+    .sauna{
+        flex-direction: column;
+
+    
+    }
+    .virivka {
+        flex-direction: column;
+
+    
+    }
+    .mas{
+        max-width: 75%;
+    }
+}
+
